@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Envíos - EcoDash</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Envíos</h1>
+        <form id="formEnvio">
+            <!-- Campo para ingresar el valor del producto -->
+            <label for="valorProducto">Valor del Producto (USD):</label>
+            <input type="number" id="valorProducto" step="0.01" required>
+
+            <!-- Campo para ingresar el peso del producto -->
+            <label for="pesoProducto">Peso del Producto (kg):</label>
+            <input type="number" id="pesoProducto" step="0.01" required>
+
+            <!-- Selección del lugar de compra del producto -->
+            <label for="lugarCompra">Lugar de compra:</label>
+            <select id="lugarCompra" required>
+                <option value="china">China</option>
+                <option value="usa">Estados Unidos</option>
+            </select>
+
+            <!-- Selección de la categoría del producto -->
+            <label for="categoriaProducto">Categoría del Producto:</label>
+            <select id="categoriaProducto" required>
+                <option selected disabled value="">Seleccione</option>
+            </select>
+
+            <!-- Botón para calcular el costo del envío -->
+            <button type="submit">Calcular Envío</button>
+        </form>
+
+        <!-- Loader que se muestra mientras se realiza el cálculo -->
+        <div id="loader"></div>
+
+        <!-- Contenedor para mostrar los resultados del cálculo -->
+        <div id="resultado"></div>
+
+        <!-- Canvas para mostrar el gráfico de costos -->
+        <canvas id="graficoCostos" class="hidden"></canvas>
+    </div>
+
+    <script src="./scripts/categorias.js"></script>
+    <script src="./scripts/calcularEnvio.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

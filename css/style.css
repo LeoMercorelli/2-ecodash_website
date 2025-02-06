@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    background: #0288d1;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    color: #0288d1;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Mejor tipografía y negrita en los input */
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Transición al desplegar la lista */
+select {
+    appearance: none;
+    background: url('https://cdn-icons-png.flaticon.com/512/892/892689.png') no-repeat right 10px center;
+    background-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #0288d1;
+    outline: none;
+    transform: scale(1.02);
+}
+
+button {
+    background: #0288d1;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #0277bd;
+    transform: scale(1.05);
+}
+
+#loader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Nuevo fondo y más espacio entre cálculos y gráficos */
+#resultado {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#resultado h2 {
+    text-align: center;
+    color: white;
+    background: #0288d1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#resultado ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resultado li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Nuevo fondo y efecto hover en el costo final */
+.costo-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #ff7043;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.costo-total:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Más separación entre el cálculo y el gráfico */
+#graficoCostos {
+    max-width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Clase para ocultar el canvas */
+.hidden {
+    display: none;
+}
+
+#graficoCostos:hover {
+    transform: scale(1.03);
+}

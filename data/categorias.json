@@ -1,0 +1,58 @@
+{
+    "categorias": [
+        {
+            "nombre": "Artículo de librería",
+            "peso": 0.01,
+            "volumen": 0.05,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Bicicleta",
+            "peso": 0.02,
+            "volumen": 0.15,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Electrodomésticos",
+            "peso": 0.03,
+            "volumen": 0.20,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Celulares",
+            "peso": 0.03,
+            "volumen": 0.25,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Videojuegos",
+            "peso": 0.02,
+            "volumen": 0.10,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Bebidas Alcohólicas",
+            "peso": 0.04,
+            "volumen": 0.30,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Lentes",
+            "peso": 0.01,
+            "volumen": 0.08,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Luces LED",
+            "peso": 0.01,
+            "volumen": 0.07,
+            "iva": 0.21
+        },
+        {
+            "nombre": "Otros",
+            "peso": 0.02,
+            "volumen": 0.12,
+            "iva": 0.21
+        }
+    ]
+}
