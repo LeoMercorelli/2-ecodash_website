@@ -1,8 +1,8 @@
-# Eco-Dash - Calculadora de Costos de Envío 🚀
+# Courier - Calculadora de Costos de Envío 🚀
 
 ## 📌 Descripción del Proyecto
 
-Eco-Dash es una aplicación web interactiva diseñada para calcular el costo estimado de envíos internacionales de productos. A pesar de su aparente simplicidad, la aplicación cumple con todos los requisitos establecidos en la consigna, aplicando una amplia variedad de conceptos aprendidos en clase.
+En esta ocasion, diseñe una aplicación web interactiva con el objetivo de calcular el costo estimado de envíos internacionales de productos. A pesar de su aparente simplicidad, la aplicación cumple con todos los requisitos establecidos en la consigna, aplicando una amplia variedad de conceptos aprendidos en clase.
 
 Este proyecto forma parte de una iniciativa real a futuro, por lo que su funcionalidad ha sido definida en base a necesidades específicas. Se han agregado características adicionales solo para cumplir con los criterios de la entrega final.
 
